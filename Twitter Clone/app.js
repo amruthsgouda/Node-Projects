@@ -29,7 +29,7 @@ const initializeServerAndDb = async () => {
 
 initializeServerAndDb();
 
-//API1
+//API1 - register new user
 app.post("/register/", async (request, response) => {
   try {
     const { username, password, name, gender } = request.body;
